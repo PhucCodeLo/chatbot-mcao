@@ -1,4 +1,6 @@
+# 📘 Python Cơ Bản Cho Người Mới Bắt Đầu
 
+Tài liệu giúp người mới tiếp cận Python qua các phần: `if/else`, `for`, `while`, xử lý file Excel bằng `pandas`, và bài tập thực tế. Mỗi mục gồm **giải thích**, **code mẫu**, **input ví dụ**, **output ví dụ**.
 
 ---
 
@@ -8,7 +10,8 @@
 
 ```python
 # Kiểm tra số âm, dương, hay bằng 0
-n = int(n)  # n sẽ được nhập trong ví dụ bên dưới
+# nhập số cần kiểm tra từ bàn phím
+n = int(input("Nhập một số nguyên: "))
 
 if n > 0:
     print("Số dương")
@@ -286,7 +289,8 @@ n = 49
 ```python
 import math
 
-lst = lst  # danh sách sẽ được nhập trong ví dụ bên dưới
+# nhập các số cách nhau bằng dấu cách từ bàn phím
+lst = [int(x) for x in lst.split()]  # chuyển chuỗi nhập thành list số nguyên
 ket_qua = []
 
 for x in lst:
@@ -312,4 +316,53 @@ Các số chính phương trong list: [1, 4, 9, 16, 25]
 
 # 🎉 Kết thúc
 
+Nếu anh muốn:
 
+* làm **file PDF**,
+* chia thành **slide**,
+* thêm bài tập trắc nghiệm,
+* hoặc làm bản cực đơn cho học sinh cấp 2,
+
+cứ nói em làm ngay nha! 🚀
+
+## 7. 📐 Kiểm tra số chính phương (cập nhật – nhập từ bàn phím)
+
+```python
+import math
+
+# nhập số từ bàn phím
+n = int(input("Nhập một số: "))
+
+# lấy căn bậc hai rồi ép về số nguyên
+can = int(math.sqrt(n))
+
+# kiểm tra
+if can * can == n:
+    print(n, "là số chính phương")
+else:
+    print(n, "không phải số chính phương")
+```
+
+---
+
+## 8. 📐 Tìm các số chính phương trong một danh sách (cập nhật – nhập từ bàn phím)
+
+```python
+import math
+
+# nhập các số cách nhau bằng dấu cách
+chuoi = input("Nhập các số, cách nhau bằng dấu cách: ")
+
+# chuyển chuỗi thành list số nguyên
+lst = [int(x) for x in chuoi.split()]
+
+ket_qua = []
+
+# duyệt từng số
+for x in lst:
+    k = int(math.sqrt(x))
+    if k * k == x:        # nếu là số chính phương
+        ket_qua.append(x)
+
+print("Các số chính phương trong list:", ket_qua)
+```
