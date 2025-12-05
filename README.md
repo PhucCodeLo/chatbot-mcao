@@ -1,7 +1,5 @@
 
 
-Tài liệu giúp người mới tiếp cận Python qua các phần: `if/else`, `for`, `while`, xử lý file Excel bằng `pandas`, và bài tập thực tế. Mỗi mục gồm **giải thích**, **code mẫu**, **input ví dụ**, **output ví dụ**.
-
 ---
 
 ## 1. ⚡ Cấu trúc điều kiện: `if`, `elif`, `else`
@@ -248,6 +246,69 @@ Số tiền nhận được: 1030150.0
 ```
 
 ---
+
+## 7. 📐 Kiểm tra số chính phương
+
+### 🔹 Code (dùng `math.sqrt`)
+
+```python
+import math
+
+# Kiểm tra một số có phải số chính phương hay không
+n = int(n)  # n sẽ được nhập trong ví dụ bên dưới
+
+# Lấy căn bậc hai bằng math.sqrt
+can = int(math.sqrt(n))
+
+# Nếu bình phương lại bằng chính nó ⇒ là số chính phương
+if can * can == n:
+    print(n, "là số chính phương")
+else:
+    print(n, "không phải số chính phương")
+```
+
+### 🔹 Input mô phỏng
+
+```
+n = 49
+```
+
+### 🔹 Output
+
+```
+49 là số chính phương
+```
+
+## 8. 📐 Tìm các số chính phương trong một danh sách
+
+### 🔹 Code (không dùng hàm, đơn giản cho người mới)
+
+```python
+import math
+
+lst = lst  # danh sách sẽ được nhập trong ví dụ bên dưới
+ket_qua = []
+
+for x in lst:
+    # kiểm tra xem x có phải số chính phương không
+    k = int(math.sqrt(x))  # căn bậc hai ép về số nguyên
+    if k * k == x:         # bình phương lại
+        ket_qua.append(x)
+
+print("Các số chính phương trong list:", ket_qua)
+```
+
+### 🔹 Input mô phỏng
+
+```
+lst = [1, 2, 4, 7, 9, 15, 16, 20, 25]
+```
+
+### 🔹 Output
+
+```
+Các số chính phương trong list: [1, 4, 9, 16, 25]
+```
 
 # 🎉 Kết thúc
 
