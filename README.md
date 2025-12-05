@@ -251,11 +251,4 @@ Số tiền nhận được: 1030150.0
 
 # 🎉 Kết thúc
 
-Nếu anh muốn:
 
-* làm **file PDF**,
-* chia thành **slide**,
-* thêm bài tập trắc nghiệm,
-* hoặc làm bản cực đơn cho học sinh cấp 2,
-
-cứ nói em làm ngay nha! 🚀
