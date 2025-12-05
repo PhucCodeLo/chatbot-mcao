@@ -1,4 +1,4 @@
-# 📘 Python Cơ Bản Cho Người Mới Bắt Đầu
+
 
 Tài liệu giúp người mới tiếp cận Python qua các phần: `if/else`, `for`, `while`, xử lý file Excel bằng `pandas`, và bài tập thực tế. Mỗi mục gồm **giải thích**, **code mẫu**, **input ví dụ**, **output ví dụ**.
 
